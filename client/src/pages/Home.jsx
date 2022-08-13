@@ -1,3 +1,4 @@
+import React from "react"
 import AddClientModal from "../components/AddClientModal"
 import Projects from "../components/Projects"
 import Clients from "../components/Clients"
@@ -5,11 +6,15 @@ import Clients from "../components/Clients"
 
 
 export default function Home() {
-  return (
-    <>
-        <AddClientModal />
-          <Projects />
-          <Clients />
-    </>
-  )
+    return (
+        <>
+            <div className="d-flex gap-3 mb4">
+                <AddClientModal />
+
+            </div>
+            <Projects />
+            <hr />
+            <Clients />
+        </>
+    )
 }
